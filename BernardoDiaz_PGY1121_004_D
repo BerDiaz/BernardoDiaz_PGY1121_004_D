@@ -1,0 +1,51 @@
+platinum = 120000
+gold = 80000
+silver = 50000
+i = []
+x = 1
+
+print ("Bienbenido a la aplicacion de Creativos")
+print("-----------------------------------------------------------")
+print("1.-Platinum, $120.000. (Asientos del 1 al 20)")
+print("2.-Gold, $80.000. (Asientos del 21 al 50)")
+print("3.-Silver, $50.000. (Asientos del 51 al 100)")
+print("4.-Salir")
+entrada = int(input("Seleccione la entrada que desea comprar: "))
+print("-----------------------------------------------------------") 
+while entrada>1 or entrada<4 :
+    if entrada == 1:
+        x = 1
+        print ("Ha seleccinado la entrada Platinum")
+        cant = int(input(print ("Cuantas entradas desa comprar:")))
+        print ("Seleccione sus asientos:")
+        while x>0 or x<1:
+            x = x + 1
+            print(x)
+            if x>19:
+                break
+    elif entrada == 2:
+        x = 20
+        print("Ha seleccinado la entrada Gold")
+        cant = int(input(print ("Cuantas entradas desa comprar:")))
+        print("Seleccione un asiento:")
+        while x>0 or x<0:
+            x = x + 1
+            print(x)
+            if x>49:
+                break
+    elif entrada == 3:
+        x = 50
+        print("Ha seleccinado la entrada Silver")
+        cant = int(input(print ("Cuantas entradas desa comprar:")))
+        print("Seleccione un asiento:")
+        while x>1 or x<1:
+            x = x + 1
+            print(x)
+            if x>99:
+                break
+    elif entrada == 4:
+        print("Ha seleccinado la opcion Salir")
+    else:
+        print("Opción inválida. Por favor, elija una opción válida.")
+    break
+    
